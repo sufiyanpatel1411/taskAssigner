@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="text-left sign-up" id="session-user">
+  </div>
+  <ul class="menu cf">
+    <li>
+      <a href="myprojects.html">Projects</a>
+    </li>
+    <li>
+      <a href="mytasks.html">Tasks</a>
+    </li>
+    <li>
+      <a href="#" id="logout-id" onclick="logout();" class="text-right sign-up wishlist">logout</a>
+    </li>
+  </ul>
+  <form id="assignTaskForm" onsubmit="assignTask();">
+    <label for="assign-task">Choose a Task:</label>
+    <select name="assign-task" id="assign_task" required onchange="submitTask(this.value)">
+    </select>
+    <label for="assign-email">Choose a User:</label>
+    <select name="assign-email" id="assign_email" required>
+
+    </select>
+    <label for="assign_admin_task_price">Hourly Rate:</label>
+    <input type="text" name="assign_admin_task_price" id="assign_admin_task_price" value="">
+    <input type="hidden" name="assign_admin_task_description" id="assign_admin_task_description" value="">
+    <label for="assing_task_priority">Task Priority:</label>
+    <select name="assing_task_priority" id="assing_task_priority" required>
+      <option value="high">High</option>
+      <option value="less">Less</option>
+    </select>
+    <div class="submit">
+      <input type="submit" value="Assign" id="form_button" />
+    </div>
+  </form>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/functionality.js"></script>
+</body>
+
+</html>

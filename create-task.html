@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="text-left sign-up" id="session-user">
+  </div>
+  <ul class="menu cf">
+    <li>
+      <a href="myprojects.html">Projects</a>
+    </li>
+    <li>
+      <a href="mytasks.html">Tasks</a>
+    </li>
+    <li>
+      <a href="#" id="logout-id" onclick="logout();" class="text-right sign-up wishlist">logout</a>
+    </li>
+  </ul>
+  <div id="container">
+    <h1> Create Task </h1>
+    <form id="createTaskForm" onsubmit="createNewTask();">
+      <label for="assign-project-name">Choose a Project:</label>
+      <select name="assign-project-name" id="assign_project" required>
+      </select>
+      <div class="name">
+        <label for="name"></label>
+        <input type="text" placeholder="Task name" name="task_name" id="name_input" required>
+      </div>
+      <div class="task-description">
+        <label for="task-description"></label>
+        <textarea name="task_description" placeholder="Write description" id="description_input" cols="30" rows="5"
+          required></textarea>
+      </div>
+      <div class="task-start-date">
+        <label for="task-start-date">Start Date</label>
+        <input type="date" placeholder="Task start date" name="task_start_date" id="date_input" required>
+      </div>
+      <div class="task-end-date">
+        <label for="task-end-date">End Date</label>
+        <input type="date" placeholder="Task end date" name="task_end_date" id="date_input" required>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit" id="form_button" />
+      </div>
+    </form><!-- // End form -->
+  </div><!-- // End #container -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/functionality.js"></script>
+</body>
+
+</html>

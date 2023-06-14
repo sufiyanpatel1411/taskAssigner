@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Projects</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="header-div">
+    <div id="website-name">
+      Project Watch Dog
+    </div>
+
+    <div id="session-user">
+    </div>
+
+  </div>
+  
+  <ul class="menu cf">
+    <li>
+      <a href="#">Projects</a>
+      <ul class="submenu">
+        <li><a id="project-create" href="new-project.html">Create </a></li>
+        <li><a id="project-assign" href="send-project.html">Assign </a></li>
+        <li><a href="assigned-projects.html">Assigned </a></li>
+        <li><a id="project-marked" href="completed-by-user-projects.html">Completed By User </a></li>
+        <li><a id="project-completed" href="done-projects.html"> Done</a></li>
+      </ul>
+    </li>
+    <li><a href="mytasks.html">Tasks</a></li>
+    <li>
+      <a href="#" id="logout-id" onclick="logout();" class="text-right sign-up wishlist">logout</a>
+    </li>
+  </ul>
+  <div class="assigned-projects">
+    <ul class="list-styling" id="projects-list">
+    </ul>
+  </div>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/functionality.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="text-left sign-up" id="session-user">
+  </div>
+  <ul class="menu cf">
+    <li>
+      <a href="myprojects.html">Projects</a>
+    </li>
+    <li>
+      <a href="mytasks.html">Tasks</a>
+    </li>
+    <li>
+      <a href="#" id="logout-id" onclick="logout();" class="text-right sign-up wishlist">logout</a>
+    </li>
+  </ul>
+  <div id="container">
+    <h1>Create New Project</h1>
+    <form id="createProjectForm" onsubmit="createNewProject();">
+      <div class="name">
+        <label for="name"></label>
+        <input type="text" placeholder="Project name" name="project_name" id="name_input" required>
+      </div>
+      <div class="project-description">
+        <label for="project-description"></label>
+        <textarea name="project_description" placeholder="Write description" id="description_input" cols="30" rows="5"
+          required></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit" id="form_button" />
+      </div>
+    </form><!-- // End form -->
+  </div><!-- // End #container -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/functionality.js"></script>
+</body>
+
+</html>

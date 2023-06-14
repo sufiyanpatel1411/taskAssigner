@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title></title>
+</head>
+
+<body>
+  <div class="text-left sign-up" id="session-user">
+  </div>
+  <ul class="menu cf">
+    <li>
+      <a href="myprojects.html">Projects</a>
+    </li>
+    <li>
+      <a href="#">Tasks</a>
+      <ul class="submenu">
+        <li><a id="task-create" href="create-task.html">Create</a></li>
+        <li><a id="task-assign" href="assign-task.html">Assign</a></li>
+        <li><a href="assigned-tasks.html">Assigned Tasks</a></li>
+        <li><a id="task-marked" href="completed-by-user-tasks.html">Completed By User</a></li>
+        <li><a id="task-completed" href="done-tasks.html">Done</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#" id="logout-id" onclick="logout();" class="text-right sign-up wishlist">logout</a>
+    </li>
+  </ul>
+  <ul class="list-styling" id="tasks-list">
+  </ul>
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/functionality.js"></script>
+</body>
+
+</html>
